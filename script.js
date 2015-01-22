@@ -1,4 +1,3 @@
-function ASort (a,b) {return a-b;}
 var m = new Array( "Виктор Крылов", "Евгений Хашин", "Лидия Хашина","Сергей Авдеев","Антон Сысоев","Павел Симаков")
 $(document).ready(function(){
   $("#btn1").each(function(){
@@ -38,6 +37,11 @@ $(document).ready(function(){
       $.each(listitems, function(idx, itm){
         mylist.append(itm); 
       });
+    })
+  })
+  $("#btn4").each(function(){
+    $(this).click(function(){
+      $("#list").html("");
     })
   })
   var i = $("#list");
