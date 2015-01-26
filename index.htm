@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 	<meta charset="utf-8"/>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-
+	<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="new_app.js"></script>
 </head>
-<body>
-    <h1>Список сотрудников</h1>
-    <ul id="list">
-    </ul>
-    <p><button id="btn1">Перемешать</button></p>
-    <p><button id="btn2">Сортировать по возрастанию</button></p>
-    <p><button id="btn3">Сортировать по убыванию</button></p>
-    <p><button id="btn4">Очистить форму</button></p>
+<body ng-controller="Ctrl">
+    <div>
+        {{a}}
+    </div>
 </body>
 </html>
