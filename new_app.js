@@ -16,11 +16,12 @@ $(document).ready(function(){
 	}
 	$timeout(countUp, 1000);
 }*/
-function Ctrl($scope, $timeout) {
-    $scope.a = 806;
+angular.module('MyAppName', [])
+    .controller('Ctrl', function($scope, $timeout) {
+    $scope.a = 1;
     var countUp = function() {
         $scope.a+= 1;
         $timeout(countUp, 1000);
     }
     $timeout(countUp, 1000);
-}
+});
