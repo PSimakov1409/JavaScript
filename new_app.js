@@ -16,12 +16,19 @@ $(document).ready(function(){
 	}
 	$timeout(countUp, 1000);
 }*/
-angular.module('MyAppName', [])
-    .controller('Ctrl', function($scope, $timeout) {
-    $scope.a = 1;
-    var countUp = function() {
+angular.module('index', [])
+    .controller('Ctrl', function($scope) {
+    //$scope.a = 5;
+    
+    $scope.res = function(){ 
+    	return 2*$scope.a; 
+    };
+
+
+
+    /*var countUp = function() {
         $scope.a+= 1;
-        $timeout(countUp, 1000);
+        $timeout(countUp, 500);
     }
-    $timeout(countUp, 1000);
+    $timeout(countUp, 500);*/
 });
